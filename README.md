@@ -35,7 +35,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/educational-app.git
+    git clone https://github.com/lost-in-noise/educational-app
     cd educational-app
     ```
 
@@ -73,6 +73,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **Email**: yourname@example.com
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: kikvadze.nancy@tbcacademy.edu.ge
+- **GitHub**: [yourusername](https://github.com/lost-in-noise)
 
