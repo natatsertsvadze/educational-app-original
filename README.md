@@ -1,4 +1,5 @@
 # Educational App
+
 TBC x USAID - Team 1
 
 An educational web application designed to enhance learning through interactive exercises and tutorials.
@@ -34,13 +35,14 @@ You can try the app live at: [Demo Link](#)
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/lost-in-noise/educational-app
-    cd educational-app
-    ```
+
+   ```sh
+   git clone https://github.com/lost-in-noise/educational-app
+   cd educational-app
+   ```
 
 2. **Open the project**:
-    Open `index.html` in your preferred web browser.
+   Open `index.html` in your preferred web browser.
 
 ## Usage
 
@@ -52,17 +54,17 @@ Contributions are welcome! Follow these steps to contribute:
 
 1. **Fork the repository**.
 2. **Create a new branch**:
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
 3. **Make your changes and commit them**:
-    ```sh
-    git commit -m 'Add some feature'
-    ```
+   ```sh
+   git commit -m 'Add some feature'
+   ```
 4. **Push to the branch**:
-    ```sh
-    git push origin feature/your-feature-name
-    ```
+   ```sh
+   git push origin feature/your-feature-name
+   ```
 5. **Open a pull request**.
 
 ## License
@@ -75,4 +77,3 @@ If you have any questions or suggestions, feel free to reach out:
 
 - **Email**: kikvadze.nancy@tbcacademy.edu.ge
 - **GitHub**: [yourusername](https://github.com/lost-in-noise)
-
