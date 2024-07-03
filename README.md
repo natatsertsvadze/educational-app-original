@@ -76,4 +76,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you have any questions or suggestions, feel free to reach out:
 
 - **Email**: kikvadze.nancy@tbcacademy.edu.ge
-- **GitHub**: [yourusername](https://github.com/lost-in-noise)
+- **GitHub**: [lost-in-noise](https://github.com/lost-in-noise)
