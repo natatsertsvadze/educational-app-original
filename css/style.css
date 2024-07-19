@@ -13,4 +13,38 @@ ul {
   list-style: none;
 }
 
-/* Starter CSS */
+/* footer styles */
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    #4949e9;
+  height: 350px;
+}
+.footer-container {
+  max-width: 1240px;
+  width: 100%;
+  height: 252px;
+  color: #ffffff;
+}
+.footer-container li,
+a {
+  color: #ffffff;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.store-icons {
+  display: flex;
+  flex-direction: column;
+}
