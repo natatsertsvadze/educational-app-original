@@ -22,7 +22,6 @@ This educational app provides a platform for students to learn and practice vari
 ## Features
 
 - **Interactive Lessons**: Engaging and interactive lessons for various subjects.
-- **Quizzes**: Timed quizzes to test knowledge and track progress.
 - **User Profiles**: Personalized user profiles to save progress and scores.
 - **Responsive Design**: Mobile-friendly design for learning on the go.
 
@@ -46,7 +45,7 @@ To set up the project locally, follow these steps:
 
 ## Usage
 
-Once the project is set up, you can start exploring the various lessons and quizzes available in the app.
+Once the project is set up, you can start exploring the various lessons available in the app.
 
 ## Contributing
 
