@@ -18,19 +18,19 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 570px;
+  /* min-height: 570px; */
   background: #fff;
 }
 .accordion {
-  max-width: 1240px;
+  max-width: 1140px;
   width: 100%;
-  height: 442px;
+  /* height: 442px; */
 }
 .faq-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   height: 44px;
 }
 .accordion-title {
@@ -48,13 +48,47 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
-
-
-
-
-
-
+.accordion-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a3aba;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 38px;
+  padding-top: 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.accordion-header p {
+  color: #3a3aba;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accordion-content {
+  display: none;
+  background-color: transparent;
+}
+.accordion-content p {
+  color: #000;
+  font-family: "BPG Glaho", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accordion-arrow {
+  transition: transform 0.3s ease;
+}
+.accordion-arrow.up {
+  transform: rotate(180deg);
+}
 
 /* footer styles */
 .footer-section {
