@@ -13,6 +13,49 @@ ul {
   list-style: none;
 }
 
+/* accordion styles - FAQ */
+.accordion-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+  background: #fff;
+}
+.accordion {
+  max-width: 1240px;
+  width: 100%;
+  height: 442px;
+}
+.faq-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  height: 44px;
+}
+.accordion-title {
+  color: #2c2c2c;
+  font-family: "BPG Mrgvlovani Caps 2010", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.faq {
+  color: #000;
+  font-family: "BPG Glaho", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+
+
+
 /* footer styles */
 .footer-section {
   display: flex;
@@ -35,8 +78,10 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
-.footer-container li,
-a {
+.footer-container li {
+  color: #ffffff;
+}
+.footer-container a {
   color: #ffffff;
 }
 .footer-nav {
