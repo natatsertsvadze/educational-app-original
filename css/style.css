@@ -13,6 +13,83 @@ ul {
   list-style: none;
 }
 
+/* mentors section style */
+.mentors-heading {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin: 38px 0 23px 0;
+}
+
+.mentors {
+  display: flex;
+}
+
+.mentors-background {
+  width: 438px;
+  height: 607px;
+  flex-direction: column;
+  align-items: center;
+  margin: 26px 108px 0 80px;
+}
+
+.person-box {
+  box-shadow: 5px 10px 18px #4949E940;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F8FF;
+  width: 400px;
+  height: 132px;
+  margin-bottom: 20px;
+}
+
+.mentors-scroll {
+  overflow-y: auto; 
+  height: 436px;
+}
+
+.person-img {
+  padding: 16px;
+}
+
+.person-name {
+  font-size: 20px;
+}
+
+.direction {
+  font-size: 14px;
+  background-color: #DBE5FF;
+  margin-top: 12px;
+}
+
+.information {
+  margin: 24px 16px 24px 24px;
+}
+
+.mentors-right-side {
+  position: relative;
+  margin-left: 160px;
+}
+
+.mentors-image {
+  position: absolute;
+  left: 26px;
+  top: 25px;
+}
+
+.frame-1 {
+  position: absolute;
+  z-index: 1;
+  left: 620px;
+}
+
+.frame-2 {
+  position: absolute;
+  bottom: 155px;
+}
+
+
 /* accordion styles - FAQ */
 .accordion-section {
   display: flex;
