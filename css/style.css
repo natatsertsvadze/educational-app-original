@@ -242,3 +242,14 @@ h4 {
 .callto {
   margin-left: 8px;
 }
+/* Scroll top btn styles */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 39px;
+  right: 39px;
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+}
