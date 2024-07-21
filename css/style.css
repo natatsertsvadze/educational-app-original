@@ -78,7 +78,9 @@ ul {
   align-items: center;
   gap: 8px;
 }
-
+.more {
+  padding-right: 45px;
+}
 /* accordion styles - FAQ */
 .accordion-section {
   display: flex;
@@ -239,4 +241,15 @@ h4 {
 }
 .callto {
   margin-left: 8px;
+}
+/* Scroll top btn styles */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 39px;
+  right: 39px;
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
 }
