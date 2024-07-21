@@ -12,6 +12,72 @@ ol,
 ul {
   list-style: none;
 }
+/* recomendations styles */
+.recomendations-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 378px;
+  border: 1px solid #dbe5ff;
+  background: #e9efff;
+}
+.recomendation-wrapper {
+  margin: 62px 100px 70px 100px;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.students-reviews {
+  display: flex;
+  width: 1240px;
+  height: 170px;
+  justify-content: center;
+  gap: 20px;
+}
+.review-card {
+  display: flex;
+  width: 295px;
+  height: 170px;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 4px 4px 10px 0px rgba(73, 73, 233, 0.4);
+}
+.review-card p {
+  padding-top: 8px;
+  padding-bottom: 2px;
+  height: 96px;
+  color: #000;
+  font-family: "BPG Glaho";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.student-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  justify-content: space-between;
+}
+.avatar-studentname h6 {
+  font-family: "BPG Nino Mtavruli";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+}
+.avatar-studentname {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 /* accordion styles - FAQ */
 .accordion-section {
