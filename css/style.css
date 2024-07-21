@@ -18,19 +18,18 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 570px; */
   background: #fff;
 }
 .accordion {
   max-width: 1140px;
   width: 100%;
-  /* height: 442px; */
+  margin: 54px 100px 83px 100px;
 }
 .faq-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 31.46px;
   height: 44px;
 }
 .accordion-title {
@@ -51,15 +50,14 @@ ul {
   cursor: pointer;
 }
 .accordion-item {
-  padding-bottom: 10px;
+  padding-top: 32.4px;
+  padding-bottom: 15.62px;
   border-bottom: 1px solid #3a3aba;
 }
 .accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 38px;
-  padding-top: 32px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -74,6 +72,8 @@ ul {
 .accordion-content {
   display: none;
   background-color: transparent;
+  padding-top: 38.91px;
+  padding-bottom: 3.49px;
 }
 .accordion-content p {
   color: #000;
