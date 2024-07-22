@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const slideInterval = setInterval(moveToNextSlide, 2000)
-    
+
 
     mentorsSlider.addEventListener('mouseout', () => {
       clearInterval(slideInterval);
