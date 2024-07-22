@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* Part 1 - NAVIGATION */
+.header {
+  border-bottom: 1px solid #ebe3e3;
+  box-shadow: 8px 1px 25px #ebe3e3;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 124rem;
+  margin: 0 auto;
+  height: 8rem;
+}
+.logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.logo-img {
+  height: 5rem;
+  width: 5rem;
+}
+.website-name {
+  color: #4949e9;
+  font-family: "Barnaba", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  list-style: none;
+  /* background-color: green; */
+  padding-left: 6rem;
+}
+.nav-link,
+.nav-link:link,
+.nav-link:active {
+  text-decoration: none;
+  color: #000;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.search-signin {
+  display: flex;
+  gap: 1.8rem;
+}
+.search-form {
+  border: 0.5px solid #585858;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.8rem;
+  width: 26rem;
+}
+.input-field {
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-family: "BPG Nino Mtavruli";
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.search-btn {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: inherit;
+}
+
+.login-btn {
+  font-family: "BPG Nino Mtavruli";
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: #dcf343;
+  border: none;
+  color: #000;
+  width: 10.2rem;
+}
+.search-btn:hover,
+.learn-more-btn:hover,
+.login-btn:hover {
+  cursor: pointer;
+}
+
+/* SECTION 1 */
+.section-one {
+  background-image: url(../images/top-sect-photos/Vector\ 207.svg);
+  background-repeat: no-repeat;
+  background-size: 22%;
+  background-position: 98% top;
+}
+.section-one-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.6rem;
+  max-width: 124rem;
+  margin: 0 auto;
+  background-image: url(../images/top-sect-photos/Vector\ 208.svg);
+  background-repeat: no-repeat;
+  /* background-position: left bottom; */
+  background-position: 5rem 25rem;
+}
+.all-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 10.4rem;
+}
+.success-heading {
+  color: #000;
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+.free-learning-heading {
+  color: #4949e9;
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 3rem;
+  font-weight: 400;
+}
+.section-one-para {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "BPG Glaho";
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.section-one-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+}
+.learn-more-btn {
+  border-radius: 6px;
+  background-color: #dcf343;
+  border: none;
+  color: #1d1929;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1.4rem 4.1rem;
+}
+.success-img {
+  width: 49rem;
+  height: 35.7rem;
+  margin: 7.4rem 7.7rem 2rem 0;
+}
+
+/* SECTION 2 */
+.programms-box {
+  max-width: 124rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.programms-heading {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-align: center;
+}
+.box {
+  width: 19rem;
+  height: 13rem;
+  background-color: #dbe5ff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.programm-name {
+  font-family: "BPG Glaho";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.51rem;
+  text-align: center;
+}
+
+/* Section Three */
+.section-three {
+  background-color: #4949e9;
+  margin-bottom: 3rem;
+  padding-bottom: 5rem;
+  /* height: 61.4rem; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.requested-courses-sec {
+  display: flex;
+  max-width: 124rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.requested-courses-heading {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  padding: 3.3rem 0 3rem 0;
+}
+.each-course {
+  padding: 1rem;
+  background-color: #ffffff;
+}
