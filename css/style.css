@@ -92,6 +92,74 @@ ul {
   grid-row: 4;
 }
 
+/* Students experience section style */
+.students-experience {
+  background: linear-gradient(180deg, #E9EFFF 0%, rgba(233, 239, 255, 0) 100%);
+}
+
+.students-arrow {
+  margin-top: 20px;
+}
+
+.students-students {
+  margin-right: 129px;
+  margin-bottom: 46px;
+}
+
+.students-heading {
+  font-size: 32px;
+  font-family: "BPG Mrgvlovani Caps 2010", sans-serif;
+  text-align: center;
+  margin-top: -120px;
+}
+
+.students-paragraph {
+  font-size: 20px;
+  font-family: "BPG Arial", sans-serif;
+  margin-top: 46px;
+}
+
+.students-exp-description {
+  width: 731px;
+  height: 290px;
+  color: #000000B2;
+}
+
+.students-exp-link {
+  color: unset;
+}
+
+.students-exp-btn {
+  background-color: #4949E9;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  color: #ffffff;
+  padding: 11px 43px 12px 44px;
+  font-size: 20px;
+  width: 189px;
+  margin-top: 61px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.students-exp-p-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.students-exp-winners-cup-div {
+  display: flex;
+  align-items: flex-end;
+  margin-right:100px;
+  
+}
+
+.students-exp-everything:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* accordion styles - FAQ */
 .accordion-section {
   display: flex;
