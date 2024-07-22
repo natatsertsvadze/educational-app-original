@@ -13,6 +13,85 @@ ul {
   list-style: none;
 }
 
+/* mentors section style */
+.mentors-heading {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin: 38px 0 23px 0;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-weight: 400;
+}
+
+.mentors {
+  display: flex;
+  justify-content: center;
+}
+
+.mentors-slider {
+  overflow: hidden;
+  position: relative;
+  max-height: 436px;
+  margin-top: 15px;
+}
+
+.slider {
+  transition: transform 0.7s ease;
+}
+
+.person-box {
+  box-shadow: 5px 10px 18px #4949E940;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F8FF;
+  width:490px;
+  height: 132px;
+  margin-bottom: 20px;
+}
+
+.person-name {
+  font-size: 20px;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-weight: 400;
+}
+
+.direction {
+  font-size: 14px;
+  background-color: #DBE5FF;
+  margin-top: 12px;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+
+}
+
+.information {
+  margin: 24px 16px 24px 24px;
+}
+
+.mentors-image-with-frames {
+  display: grid;
+  grid-template-columns: 10% 2.9% 1fr 1fr 1fr 13% 8%;
+  grid-template-rows: 4% 1fr 1fr 26.5% 10%;
+}
+
+.mentors-picture {
+  grid-column: 3/7;
+  grid-row: 2/7;
+  width: 750px;
+}
+
+.frame-1 {
+  z-index: 1;
+  grid-column: 6;
+  grid-row: 1;
+}
+
+.frame-2 {
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 4;
+}
+
 /* accordion styles - FAQ */
 .accordion-section {
   display: flex;
