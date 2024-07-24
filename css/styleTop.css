@@ -29,11 +29,10 @@ html {
   height: 5rem;
   width: 5rem;
 }
-.website-name {
-  color: #4949e9;
 
-  font-size: 3.2rem;
-  font-weight: 400;
+.title-img {
+  width: 14.9rem;
+  height: 2.6rem;
 }
 .nav-list {
   display: flex;
@@ -174,12 +173,8 @@ html {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem;
-}
-.programms-heading {
-  font-family: "BPG Mrgvlovani Caps 2010";
-  font-weight: 400;
-  font-size: 3.2rem;
-  text-align: center;
+  overflow: hidden;
+  transition: transform 0.7s ease;
 }
 .box {
   width: 19rem;
@@ -189,13 +184,29 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.7s ease;
 }
-.programm-name {
+
+.programms-heading {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.programm-name,
+.programm-name:link,
+.programm-name:active {
   font-family: "BPG Glaho";
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.51rem;
   text-align: center;
+  color: #040404;
+}
+.programm-name:hover,
+.programm-name:visited {
+  cursor: pointer;
 }
 
 /* Section 3 */
