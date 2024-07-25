@@ -51,14 +51,3 @@
     /* Safari, Android, iOS */
       url("../fonts/bpg-glaho-webfont.svg#bpg_glahoregular") format("svg"); /* Legacy iOS */
 }
-@font-face {
-  font-family: 'Barnaba';
-  src: url('../fonts/Barnaba.eot');
-  src: url('../fonts/Barnaba.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Barnaba.woff2') format('woff2'),
-      url('../fonts/Barnaba.woff') format('woff'),
-      url('../fonts/Barnaba.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
