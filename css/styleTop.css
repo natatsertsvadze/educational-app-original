@@ -102,11 +102,10 @@ html {
 
 /* SECTION 1 */
 .section-one {
-  background-image: url(../images/top-sect-photos/Vector\ 207.svg);
+  /* background-image: url(../images/top-sect-photos/Vector\ 207.svg);
   background-repeat: no-repeat;
   background-size: 22%;
-  background-position: 98% top;
-  max-width: 100vw;
+  background-position: 98% top; */
 }
 .section-one-div {
   display: flex;
@@ -115,10 +114,11 @@ html {
   gap: 7.6rem;
   max-width: 124rem;
   margin: 0 auto;
-  background-image: url(../images/top-sect-photos/Vector\ 208.svg);
-  background-repeat: no-repeat;
-  /* background-position: left bottom; */
-  background-position: 5rem 25rem;
+  background-image: url(../images/top-sect-photos/Vector\ 208.svg),
+    url(../images/top-sect-photos/Vector\ 207.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 22%;
+  background-position: 5rem 25rem, 100% top;
 }
 .all-text {
   display: flex;
@@ -216,21 +216,20 @@ html {
 /* Section 3 */
 .section-three {
   background-color: #4949e9;
-  margin-bottom: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7.7rem;
 }
 
 .next-btn-div-left {
   position: absolute;
   top: 50%;
-  left: -2.5%;
+  left: -2.1%;
   transform: translate(-50%, -50%);
 }
 
 .next-btn-div-right {
   position: absolute;
   top: 50%;
-  right: -5.5%;
+  right: -5%;
   transform: translate(-50%, -50%);
 }
 .left-btn,
@@ -259,10 +258,11 @@ html {
 .requested-courses-sec {
   display: grid;
   max-width: 124rem;
+  height: 39.8rem;
   /* width: 86.1%; */
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  /* overflow-x: auto; */
   gap: 2rem;
   position: relative;
 }
@@ -275,10 +275,32 @@ html {
   text-align: center;
   padding: 3.3rem 0 3rem 0;
 }
+.sect-three-container {
+  max-width: 134rem;
+  margin: 0 auto;
+  position: relative;
+}
+.yellow-dots {
+  position: absolute;
+  top: -22.5%;
+  right: -4%;
+  /* z-index: 1000; */
+}
+.left-circles {
+  position: absolute;
+  left: -5%;
+  top: -19%;
+}
+.right-circles {
+  position: absolute;
+  right: -4.5%;
+  bottom: -15%;
+}
 .each-course {
   padding: 2.3rem 2.5rem 2.3rem 2.6rem;
   background-color: #ffffff;
   border-radius: 1rem;
+  transition: transform 0.7s ease;
 }
 
 .img-box {
@@ -310,9 +332,8 @@ html {
 .img-box-four {
   background-image: linear-gradient(to bottom, #f1ebeb00, #3131e4),
     url("../images/top-sect-photos/image\ 4.png");
-  background-position: bottom left;
 }
-.full-heart {
+/* .full-heart {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 50%;
@@ -320,12 +341,20 @@ html {
   top: -5%;
   right: -5%;
   z-index: 1000;
-}
-.empty-heart {
+} */
+.empty-heart,
+.full-heart {
+  background-color: #fff;
+  padding: 1rem;
+  clip-path: circle(50%);
   position: absolute;
+  cursor: pointer;
+
   top: -5%;
   right: -5%;
   z-index: 1000;
+  width: 4.4rem;
+  height: 4.4rem;
 }
 .course-name {
   color: #2c2c2c;
@@ -373,5 +402,6 @@ html {
   background-color: #dcf343;
   border-radius: 0.6rem;
 }
-.details-link {
+.heart {
+  background-color: red;
 }
