@@ -157,7 +157,7 @@ ul {
 
 /* Students experience section style */
 .students-experience {
-  background: linear-gradient(180deg, #e9efff 0%, rgba(233, 239, 255, 0) 100%);  
+  background: linear-gradient(180deg, #e9efff 0%, rgba(233, 239, 255, 0) 100%);
   justify-content: center;
   display: flex;
 }
@@ -219,7 +219,7 @@ ul {
 
 /* new-courses section style */
 .new-courses {
-  background-color: #4949E9;
+  background-color: #4949e9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,20 +305,21 @@ ul {
   height: 206px;
 }
 
-.new-courses-fullheart, .new-courses-emptyheart {
+.new-courses-fullheart,
+.new-courses-emptyheart {
   grid-row: 1;
   grid-column: 3;
   z-index: 1;
   padding: 10px;
-  background-color: white; 
-  border: 1px solid transparent; 
-  box-shadow: 0 0 0 10px white; 
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 10px white;
   clip-path: circle(50%);
   cursor: pointer;
-  }
+}
 
 .new-courses-card-image {
- grid-row: 2;
+  grid-row: 2;
 }
 
 .purple-shadow {

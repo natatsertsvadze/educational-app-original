@@ -6,6 +6,9 @@
 html {
   font-size: 62.5%;
 }
+.padding-div {
+  padding: 0 5rem;
+}
 /* Part 1 - NAVIGATION */
 .header {
   border-bottom: 1px solid #ebe3e3;
@@ -99,10 +102,10 @@ html {
 
 /* SECTION 1 */
 .section-one {
-  background-image: url(../images/top-sect-photos/Vector\ 207.svg);
+  /* background-image: url(../images/top-sect-photos/Vector\ 207.svg);
   background-repeat: no-repeat;
   background-size: 22%;
-  background-position: 98% top;
+  background-position: 98% top; */
 }
 .section-one-div {
   display: flex;
@@ -111,10 +114,11 @@ html {
   gap: 7.6rem;
   max-width: 124rem;
   margin: 0 auto;
-  background-image: url(../images/top-sect-photos/Vector\ 208.svg);
-  background-repeat: no-repeat;
-  /* background-position: left bottom; */
-  background-position: 5rem 25rem;
+  background-image: url(../images/top-sect-photos/Vector\ 208.svg),
+    url(../images/top-sect-photos/Vector\ 207.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 22%;
+  background-position: 5rem 25rem, 100% top;
 }
 .all-text {
   display: flex;
@@ -212,20 +216,57 @@ html {
 /* Section 3 */
 .section-three {
   background-color: #4949e9;
-  margin-bottom: 3rem;
-  padding-bottom: 5rem;
-  /* height: 61.4rem; */
-  /* display: flex;
+  padding-bottom: 7.7rem;
+}
+
+.next-btn-div-left {
+  position: absolute;
+  top: 50%;
+  left: -2.1%;
+  transform: translate(-50%, -50%);
+}
+
+.next-btn-div-right {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+}
+.left-btn,
+.right-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; */
+}
+.left-btn:hover,
+.right-btn:hover {
+  cursor: pointer;
+}
+.click {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
 }
 .requested-courses-sec {
-  display: flex;
+  display: grid;
   max-width: 124rem;
+  height: 39.8rem;
+  /* width: 86.1%; */
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* overflow-x: auto; */
+  gap: 2rem;
+  position: relative;
 }
+
 .requested-courses-heading {
   font-family: "BPG Mrgvlovani Caps 2010";
   font-size: 3.2rem;
@@ -234,7 +275,133 @@ html {
   text-align: center;
   padding: 3.3rem 0 3rem 0;
 }
+.sect-three-container {
+  max-width: 134rem;
+  margin: 0 auto;
+  position: relative;
+}
+.yellow-dots {
+  position: absolute;
+  top: -22.5%;
+  right: -4%;
+  /* z-index: 1000; */
+}
+.left-circles {
+  position: absolute;
+  left: -5%;
+  top: -19%;
+}
+.right-circles {
+  position: absolute;
+  right: -4.5%;
+  bottom: -15%;
+}
 .each-course {
-  padding: 1rem;
+  padding: 2.3rem 2.5rem 2.3rem 2.6rem;
   background-color: #ffffff;
+  border-radius: 1rem;
+  transition: transform 0.7s ease;
+}
+
+.img-box {
+  /* width: 24.4rem; */
+  width: 100%;
+  height: 17.7rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-size: cover;
+  border-radius: 0.8rem;
+}
+.star-emojiS {
+  margin: 0 0 0.6rem 1rem;
+}
+.img-box-one {
+  background-image: linear-gradient(to bottom, #fffdfd00, #3131e4),
+    url("../images/top-sect-photos/image\ 6.png");
+}
+.img-box-two {
+  background-image: linear-gradient(to bottom, #fffdfd00, #3131e4),
+    url("../images/top-sect-photos/image\ 2.png");
+}
+.img-box-three {
+  background-image: linear-gradient(to bottom, #fffdfd00, #3131e4),
+    url("../images/top-sect-photos/image\ 3.png");
+}
+.img-box-four {
+  background-image: linear-gradient(to bottom, #f1ebeb00, #3131e4),
+    url("../images/top-sect-photos/image\ 4.png");
+}
+/* .full-heart {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  z-index: 1000;
+} */
+.empty-heart,
+.full-heart {
+  background-color: #fff;
+  padding: 1rem;
+  clip-path: circle(50%);
+  position: absolute;
+  cursor: pointer;
+
+  top: -5%;
+  right: -5%;
+  z-index: 1000;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.course-name {
+  color: #2c2c2c;
+  font-size: 1.6rem;
+  font-family: "BPG Glaho";
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 1.6rem;
+  max-width: 21rem;
+}
+.course-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-left,
+.details-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.details-text {
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "BPG Glaho";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+.details-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.details-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.09rem;
+}
+.details-btn {
+  height: 3.2rem;
+  width: 16.7rem;
+  border: none;
+  background-color: #dcf343;
+  border-radius: 0.6rem;
+}
+.heart {
+  background-color: red;
 }
