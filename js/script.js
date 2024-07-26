@@ -26,6 +26,68 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// new courses favourite
+const fullHeart = document.querySelectorAll(".new-courses-emptyheart")
+
+const toggleFavourite = (event) => {
+  const element = event.currentTarget;
+  element.classList.toggle("favourite");
+
+  if (element.classList.contains("favourite")) {
+    element.src = 'images/main/new-courses-heart-full.png';
+  } else {
+    element.src = 'images/main/new-courses-emptyheart.png';
+  }
+};
+
+fullHeart.forEach(element => {
+  element.addEventListener('click', toggleFavourite);
+});
+
+// new courses carousel 
+let currentSliderIndex = 0;
+
+const totalImages = document.querySelectorAll('.new-courses-entire-card').length;
+
+function updateCarousel() {
+  const images = document.querySelectorAll('.new-courses-entire-card');
+  const imagesPerSlide = 4;
+
+  images.forEach((image, index) => {
+    if (index >= currentSliderIndex && index < currentSliderIndex + imagesPerSlide) {
+      image.style.display = 'flex';
+    } else {
+      image.style.display = 'none';
+    }
+  });
+}
+
+function prev() {
+  const imagesPerSlide = 4;
+  if (currentSliderIndex > 0) {
+    currentSliderIndex--;
+  } else {
+    currentSliderIndex = totalImages - imagesPerSlide;
+  }
+  updateCarousel();
+}
+
+function next() {
+  const imagesPerSlide = 4;
+  if (currentSliderIndex < totalImages - imagesPerSlide) {
+    currentSliderIndex++;
+  } else {
+    currentSliderIndex = 0;
+  }
+  updateCarousel();
+}
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
+document.querySelector(".new-courses-arrow-left").addEventListener('click', prev);
+document.querySelector(".new-courses-arrow-right").addEventListener('click', next);
+
 // accordion
 document.addEventListener("DOMContentLoaded", () => {
   const headers = document.querySelectorAll(".accordion-header");
