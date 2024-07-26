@@ -1,5 +1,31 @@
-@media (max-width: 768px) {
-}
-
-@media (max-width: 480px) {
-}
+@media (max-width: 780px) {
+    .accordion {
+      margin: 14px 16px 21px 16px;
+    }
+    .accordion-title {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    .faq-title {
+      height: 12px;
+      margin-bottom: 7px;
+    }
+    .faq {
+      font-size: 10px;
+    }
+    .accordion-item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border-bottom: 0.5px solid #3a3aba99;
+    }
+    .accordion-header p {
+      line-height: 12px;
+      font-size: 12px;
+    }
+    .accordion-content {
+      padding-top: 4px;
+    }
+    .accordion-content p {
+      font-size: 10px;
+    }
+  }
