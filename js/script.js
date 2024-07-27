@@ -1,32 +1,39 @@
 "use strict";
 
-// mentors-slider
-document.addEventListener("DOMContentLoaded", function () {
-  const mentorsSlider = document.querySelector(".mentors-slider");
-  const slider = document.querySelector(".slider");
-  const mentorsBox = document.querySelectorAll(".person-box");
-  const slideHeight = mentorsBox[0].offsetHeight;
-  let slideIndex = 0;
+// mentors-carousel
+let currentMentorsIndex = 0;
+const boxPerSlide = 3;
 
-  const moveToNextSlide = () => {
-    slideIndex++;
-    if (slideIndex >= mentorsBox.length) {
-      slideIndex = 0;
-    }
-    const translateY = -slideIndex * slideHeight;
-    slider.style.transform = `translateY(${translateY}px)`;
-  };
+const slides = document.querySelector(".slider");
+const boxes = Array.from(slides.children);
+const boxesSlides = boxes.length;
+const totalSlides = Math.ceil(boxesSlides / boxPerSlide);
 
-  const slideInterval = setInterval(moveToNextSlide, 2000);
-
-  mentorsSlider.addEventListener("mouseout", () => {
-    clearInterval(slideInterval);
-  });
-
-  mentorsSlider.addEventListener("mouseleave", () => {
-    slideInterval = setInterval(moveToNextSlide, 2000);
-  });
+boxes.forEach(box => {
+  const clone = box.cloneNode(true);
+  slides.appendChild(clone);
 });
+
+function toTheNextSlide() {
+  const slideHeight = slides.firstElementChild.getBoundingClientRect().height;
+  currentMentorsIndex++;
+  if (currentMentorsIndex >= boxesSlides) {
+    currentMentorsIndex = 0;
+    slides.style.transition = 'none'; // Disable transition when jumping back to start
+    slides.style.transform = 'translateY(0)';
+    
+    // Force reflow to restart the animation
+    slides.offsetHeight; // Trigger reflow
+    
+    // Re-enable transition and move to the next slide
+    slides.style.transition = 'transform 0.5s ease';
+  }
+  
+  const offset = -currentMentorsIndex * slideHeight;
+  slides.style.transform = `translateY(${offset}px)`;
+}
+
+setInterval(toTheNextSlide, 3000);
 
 // new courses favourite
 const fullHeart = document.querySelectorAll(".new-courses-emptyheart");
